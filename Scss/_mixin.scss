@@ -1,0 +1,26 @@
+@mixin nav_button ($buttonColor, $textButtonColor, $buttonColorHover, $textButtonColorHover) {
+    background-color: $buttonColor;
+    color: $textButtonColor;
+
+    border: none;
+
+    margin: 1rem;
+    padding: 1.5rem 4rem;
+
+    transform: skew(-20deg);
+
+    transition: all 250ms ease-in-out;
+
+    p {
+        font-size: 2.4rem;
+        font-weight: bold;
+        @include pfRegular();
+
+        transform: skew(20deg);
+    }
+
+    &:hover {
+        background-color: $buttonColorHover;
+        color: $textButtonColorHover;
+    }
+}

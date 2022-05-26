@@ -1,0 +1,88 @@
+<!-- Arquivo manifest obrigatorio em todos os SCORMs para comunicação com LMS -->
+<!-- Manifest file required in all SCORMs for communication with LMS -->
+
+
+<!-- Inicio da tag xml para identificação de extensão -->
+<!-- Beginning of xml tag for extension identification -->
+<?xml version="1.0" standalone="no" ?>
+
+
+<!-- Links de padroes XML para funcionamento em plataforma LMS -->
+<!-- XML standard links to run on LMS platform -->
+<manifest identifier="com.scorm.golfsamples.runtime.minimumcalls.12" version="1"
+       xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+       xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                           http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                           http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  
+
+<metadata>
+    <!-- Citação do "schema" SCORM para LMS -->
+    <!-- Citation of SCORM "schema" for LMS -->
+    <schema>ADL SCORM</schema>
+
+    <!-- Versão do SCORM utilizada -->
+    <!-- SCORM version used -->
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <!-- Identificador de organização padrão -->
+  <!-- Default organization identifier -->
+  <organizations default="TOT_wiki_smaple_page">
+    <!-- Identificador de organização/arquivo -->
+    <!-- Organization/File Identifier -->
+    <organization identifier="TOT_wiki_smaple_page">
+      <!-- Criação de SCO, aqui é utilizado apenas um por definição do cliente -->
+      <!-- SCO creation, only one is used here per client definition -->
+      <item identifier="TOT_wiki_page_item" identifierref="TOT_wiki_page_resource">
+        <!-- Titulo do seu curso -->
+        <!-- Title of your course --> 
+        <title>TOT Wiki - Introduções as TECS da TOT</title>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    
+    <!--Chamar identificador de SCO para definir arquivos de cada aula/ modulo, neste caso é usado apenas um por definição do cliente.
+      Apos isto, identifica o tipo de conteudo, neste caso um "webcontent"
+      Depois, define o scormtype para SCO
+      Por final, define a pagina de lançamento, neste caso: launchPage-->
+      <!--Call SCO identifier to define files for each class/module, in this case only one is used per client definition.
+      After that, identify the content type, in this case a "webcontent".
+      Then it sets the scormtype to SCO
+      Finally, define the launch page, in this case: launchPage-->
+    <resource identifier="TOT_wiki_page_resource" type="webcontent" adlcp:scormtype="sco" href="API/launchPage.html">
+      <file href="introducao/intro.html"/>
+      <file href="introducao/style.css"/>
+      <file href="introducao/Capa.png"/>
+
+      <file href="aula01/aula01.html"/>
+      <file href="aula01/style.css"/>
+      <file href="aula01/Card01.png"/>
+      <file href="aula01/Card02.png"/>
+      <file href="aula01/Card03.png"/>
+
+      <file href="aula02/aula02.html"/>
+      <file href="aula02/style.css"/>
+      <file href="aula02/Img.png"/>
+
+      <!-- Aqui, define as dependencias, os arquivos padroes -->
+      <!-- Here, define the dependencies, the default files -->
+      <dependency identifierref="common_files" />
+    </resource>
+
+    <!--Aqui, identifica os arquivos padroes para serem usados -->
+    <!--Here, identify the default files to be used -->
+    <resource identifier="common_files" type="webcontent" adlcp:scormtype="asset">
+      <file href="API/APIcomunication.js"/>
+      <file href="API/nav.js"/>
+      <file href="API/style.css"/>
+      <file href="resetCss/reset.css"/>
+      <file href="font/Mont/Non-commercial/OTF/Mont-Trial-Black.otf"/>
+      <file href="font/Mont/Non-commercial/OTF/Mont-Trial-Regular.otf"/>
+    </resource>
+
+  </resources>
+</manifest>

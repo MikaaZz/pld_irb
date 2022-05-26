@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "pf_agora_slab_regular";
+  src: url(../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+}
+
+@font-face {
+  font-family: "pf_agora_slab_bold";
+  src: url(../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+}
+
+@font-face {
+  font-family: "effra_regular";
+  src: url(../../Fonts/Effra_Std_Rg.ttf);
+}
+
+@font-face {
+  font-family: "effra_ligth";
+  src: url(../../Fonts/Effra_Std_Lt.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2.2rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: "effra_regular";
+}
+
+.hidden {
+  display: none;
+}
+
+.container_header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
+.container_header .content_header--image {
+  margin: 2rem;
+}
+
+.container_header .container_header--nav {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_header .container_header--nav .close_nav--icon {
+  color: #005A69;
+  font-size: 4.8rem;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.container_header .container_header--nav .container_nav--opened {
+  background-color: #005A69;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  width: 40%;
+}
+
+.container_header .container_header--nav .container_nav--opened .opened_nav--icon {
+  border: solid 0.25rem #fff;
+  border-radius: .25rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 4.8rem;
+  -webkit-transition: all .250ms ease-in-out;
+  transition: all .250ms ease-in-out;
+}
+
+.container_header .container_header--nav .container_nav--opened .opened_nav--icon:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.container_header .container_header--nav .container_nav--opened .container_nav--buttons .opened_nav--button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  text-align: left;
+}
+
+.container_header .container_header--nav .container_nav--opened .container_nav--buttons .opened_nav--line {
+  border: solid 0.1rem #fff;
+}
+
+.container_main .iframe_course {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container_main .main_button-start {
+  background-color: #ECE4DB;
+  color: #25A29A;
+  border: none;
+  margin: 1rem;
+  padding: 1.5rem 4rem;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.container_main .main_button-start p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "pf_agora_slab_regular";
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_main .main_button-start:hover {
+  background-color: #25A29A;
+  color: #fff;
+}
+
+.container_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_footer .main_button-previous {
+  background-color: #ECE4DB;
+  color: #25A29A;
+  border: none;
+  margin: 1rem;
+  padding: 1.5rem 4rem;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.container_footer .main_button-previous p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "pf_agora_slab_regular";
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_footer .main_button-previous:hover {
+  background-color: #005A69;
+  color: #fff;
+}
+
+.container_footer .main_button-next {
+  background-color: #25A29A;
+  color: #fff;
+  border: none;
+  margin: 1rem;
+  padding: 1.5rem 4rem;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.container_footer .main_button-next p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "pf_agora_slab_regular";
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_footer .main_button-next:hover {
+  background-color: #005A69;
+  color: #fff;
+}
+
+.container_footer .main_button-finish {
+  background-color: #ECE4DB;
+  color: #25A29A;
+  border: none;
+  margin: 1rem;
+  padding: 1.5rem 4rem;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.container_footer .main_button-finish p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "pf_agora_slab_regular";
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_footer .main_button-finish:hover {
+  background-color: #005A69;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

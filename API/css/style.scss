@@ -1,0 +1,159 @@
+@import '../../Scss/var';
+@import '../../Scss/mixin';
+@import '../../Scss/fonts';
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color_white;
+}
+
+h1 {
+    font-size: 6.4rem;
+    @include pfRegular();
+}
+
+h2 {
+    font-size: 3.2rem;
+    @include pfRegular();
+}
+
+h3 {
+    font-size: 2.8rem;
+    @include pfRegular();
+}
+
+h4,
+h5,
+h6 {
+    font-size: 2.2rem;
+    @include pfRegular();
+}
+
+p {
+    font-size: 1.6rem;
+    @include effraRegular();
+}
+
+.hidden {
+    display: none;
+}
+
+.container_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $color_white;
+
+    .content_header--image {
+        margin: 2rem;
+    }
+
+    .container_header--nav {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+
+        .close_nav--icon {
+            color: $color_blueDark;
+            font-size: 4.8rem;
+
+            cursor: pointer;
+
+            margin: 2rem;
+        }
+
+        .container_nav--opened {
+
+            background-color: $color_blueDark;
+
+            align-items: flex-end;
+            display: none;
+            flex-direction: column;
+
+            padding: 2rem;
+
+            width: 40%;
+
+            .opened_nav--icon {
+                border: solid .25rem $color_white;
+                border-radius: .25rem;
+                color: $color_white;
+
+                cursor: pointer;
+
+                font-size: 4.8rem;
+
+                transition: all .250ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .container_nav--buttons {
+
+                .opened_nav--button {
+                    border: none;
+                    background-color: transparent;
+
+                    color: $color_white;
+
+                    display: block;
+
+                    font-size: 2.2rem;
+
+                    margin: 1rem;
+
+                    text-align: left;
+                }
+
+                .opened_nav--line {
+                    border: solid 0.1rem $color_white;
+                }
+
+            }
+
+
+
+        }
+    }
+}
+
+.container_main {
+
+    .iframe_course {
+        margin: 0;
+        padding: 0;
+
+        width: 100%;
+    }
+
+    .main_button-start {
+        @include nav_button ($color_cream, $color_blueClear, $color_blueClear, $color_white);
+    }
+}
+
+.container_footer {
+    
+    display: flex;
+    justify-content: center;
+
+    .main_button-previous {
+        @include nav_button ($color_cream, $color_blueClear, $color_blueDark, $color_white);
+    }
+
+    .main_button-next {
+        @include nav_button ($color_blueClear, $color_white, $color_blueDark, $color_white);
+    }
+
+    .main_button-finish {
+        @include nav_button ($color_cream, $color_blueClear, $color_blueDark, $color_white);
+    }
+}

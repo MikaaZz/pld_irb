@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "pf_agora_slab_regular";
+  src: url(../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+}
+
+@font-face {
+  font-family: "pf_agora_slab_bold";
+  src: url(../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+}
+
+@font-face {
+  font-family: "effra_regular";
+  src: url(../../Fonts/Effra_Std_Rg.ttf);
+}
+
+@font-face {
+  font-family: "effra_ligth";
+  src: url(../../Fonts/Effra_Std_Lt.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ECE4DB;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+p {
+  font-size: 2rem;
+  font-family: "effra_regular";
+}
+
+.header_introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header_introduction .container_header--title {
+  background-image: url();
+  -webkit-filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(957%) hue-rotate(155deg) brightness(99%) contrast(102%);
+          filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(957%) hue-rotate(155deg) brightness(99%) contrast(102%);
+}
+
+.header_introduction .container_header--title .content_header--title {
+  background-color: #005A69;
+  -webkit-clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
+          clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
+  width: 25%;
+}
+
+.header_introduction .container_header--title .content_header--title h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.header_introduction .container_header--bar {
+  background-color: #25A29A;
+  margin: 1rem 0;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.main_introduction {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.main_introduction .content_main--image {
+  width: 50%;
+}
+
+.main_introduction .content_main--text {
+  color: #4B4F54;
+  margin: 1rem;
+}
+
+.main_introduction .content_main--text:last-child {
+  font-weight: bold;
+}
+/*# sourceMappingURL=introduction.css.map */
