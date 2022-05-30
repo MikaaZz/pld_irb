@@ -11,10 +11,13 @@
 
 body {
     background-color: $color_cream;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 h1 {
-    font-size: 6.4rem;
+    font-size: 8.2rem;
     @include pfRegular();
 }
 
@@ -46,13 +49,15 @@ p {
     flex-direction: column;
 
     .container_header--title {
-        background-image: url();
-        filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(957%) hue-rotate(155deg) brightness(99%) contrast(102%);
+        background-image: url(../../assets/introduction/pld_irb_capa.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
+        padding: 5rem 0;
         .content_header--title {
-
             background-color: $color_blueDark;
-
+            
             clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
 
             width: 25%;
@@ -60,14 +65,16 @@ p {
             h1 {
                 color: $color_white;
                 text-align: center;
+                text-transform: uppercase;
             }
         }
     }
 
+
     .container_header--bar {
         background-color: $color_blueClear;
 
-        margin: 1rem 0;
+        margin: 0;
         padding: 3rem 0;
 
         width: 100%;

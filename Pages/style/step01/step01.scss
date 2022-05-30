@@ -1,0 +1,233 @@
+@import '../../../Scss/var';
+@import '../../../Scss/mixin';
+@import '../../../Scss/fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color_cream;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 8.2rem;
+    @include pfRegular();
+}
+
+h2 {
+    font-size: 3.2rem;
+    @include pfRegular();
+}
+
+h3 {
+    font-size: 2.8rem;
+    @include pfRegular();
+}
+
+h4,
+h5,
+h6 {
+    font-size: 2.4rem;
+    @include pfRegular();
+}
+
+p {
+    font-size: 2rem;
+    @include effraRegular();
+}
+
+.header_introduction {
+
+    display: flex;
+    flex-direction: column;
+
+    .container_header--title {
+        background-image: url(../../assets/introduction/pld_irb_capa.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 5rem 0;
+
+        .content_header--title {
+            background-color: $color_blueDark;
+
+            clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
+
+            width: 25%;
+
+            h1 {
+                color: $color_white;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+    .container_header--bar {
+        background-color: $color_blueClear;
+
+        margin: 0;
+        padding: 3rem 0;
+
+        width: 100%;
+    }
+}
+
+.main_stepOne {
+
+    .main_subtitle {
+        color: $color_blueClear;
+
+        margin: 1rem auto;
+        text-align: center;
+
+        width: 60%;
+    }
+
+    .container_main--about {
+
+        background-image: url();
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+
+        .container_textBlock--about {
+
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+
+            background-color: $color_white;
+
+            padding: 3rem;
+
+            text-align: left;
+            width: 50%;
+
+            -webkit-box-shadow: 5px 5px 0px 0px $color_blueDark, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            box-shadow: -8px 8px 0px 0px $color_blueDark, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            transform: skew(-20deg);
+
+            .content_title--about {
+                color: $color_blueDark;
+                transform: skew(20deg);
+            }
+
+            .content_paragraph--about {
+                transform: skew(20deg);
+            }
+        }
+    }
+
+    .container_main--whiteBG {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: $color_white;
+        border-top: 1rem solid $color_blueClear;
+
+        margin: 2rem auto;
+
+        width: 80%;
+
+        .container_whiteBG--iconMoreText {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            margin: 1rem;
+
+            .text_iconMoreText {
+                color: $color_blueDark;
+                text-align: left;
+
+                margin-left: 1rem;
+                width: 50%;
+            }
+        }
+
+        .container_whiteBG--textInBlock {
+            background-color: $color_blueClear;
+            color: $color_white;
+
+            margin: 1rem;
+            padding: 1rem;
+
+            transform: skew(-20deg);
+            width: 80%;
+
+            .text_textInblock {
+                display: block;
+
+                @include pfBold();
+                font-weight: bold;
+                text-align: center;
+
+                transform: skew(20deg);
+            }
+        }
+
+        .content_text--whiteBG {
+            font-size: 2.2rem;
+            font-weight: normal;
+            @include pfRegular();
+
+            margin: 1rem;
+        }
+
+        .container_main_iconsAndText {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            .container_iconsAndText--treeItens {
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+
+                .container_iconAndText {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+
+                    margin: 1rem;
+
+                    .content_icondAndText--text {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+
+        .content_separationBar--blueClear {
+            display: flex;
+            justify-content: center;
+
+            background-color: $color_blueClear;
+
+            transform: skew(-20deg);
+
+            margin: 2rem;
+            padding: 1% 10%;
+        }
+
+        .content_main--text {
+            text-align: center;
+        }
+    }
+}

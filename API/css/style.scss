@@ -10,7 +10,11 @@
 }
 
 body {
-    background-color: $color_white;
+    background-color: $color_cream;
+    
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
 }
 
 h1 {
@@ -131,12 +135,14 @@ p {
     .iframe_course {
         margin: 0;
         padding: 0;
-
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
     }
 
     .main_button-start {
-        @include nav_button ($color_cream, $color_blueClear, $color_blueClear, $color_white);
+        display: block;
+        
+        @include nav_button ($color_white, $color_blueClear, $color_blueClear, $color_white);
     }
 }
 

@@ -26,10 +26,13 @@
 
 body {
   background-color: #ECE4DB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 8.2rem;
   font-family: "pf_agora_slab_regular";
 }
 
@@ -66,9 +69,11 @@ p {
 }
 
 .header_introduction .container_header--title {
-  background-image: url();
-  -webkit-filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(957%) hue-rotate(155deg) brightness(99%) contrast(102%);
-          filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(957%) hue-rotate(155deg) brightness(99%) contrast(102%);
+  background-image: url(../../assets/introduction/pld_irb_capa.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
 }
 
 .header_introduction .container_header--title .content_header--title {
@@ -81,11 +86,12 @@ p {
 .header_introduction .container_header--title .content_header--title h1 {
   color: #fff;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header_introduction .container_header--bar {
   background-color: #25A29A;
-  margin: 1rem 0;
+  margin: 0;
   padding: 3rem 0;
   width: 100%;
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- <script src="./JScript/APIcomunication.js"></script> -->
+    <script src="./JScript/API.js"></script>
 </head>
 
 <body>
@@ -75,27 +75,38 @@
 
     <main class="container_main">
         <iframe id="iframe_course" class="iframe_course" src="" frameborder="0"></iframe>
-        <button class="main_button-start" onclick="proximaPagina()"><p>Iniciar</p></button>
+        <button class="main_button-start" onclick="goToNextPage()">
+            <p>Iniciar</p>
+        </button>
     </main>
 
     <nav class="container_footer">
-        <button class="main_button-previous" onclick="paginaAnterior()"><p>Voltar para a tela inicial</p></button>
-        <button class="main_button-next" onclick="proximaPagina()"><p>Próxima etapa</p></button>
-        <button class="main_button-finish"><p>Finalizar curso</p></button>
+        <button class="main_button-previous hidden" onclick="goToLastPage()">
+            <p>Voltar para a tela inicial</p>
+        </button>
+        <button class="main_button-next hidden" onclick="goToNextPage()">
+            <p>Próxima etapa</p>
+        </button>
+        <button class="main_button-finish hidden">
+            <p>Finalizar curso</p>
+        </button>
     </nav>
 
+    <script src="./JScript/buttons.js"></script>
 
-    <!--
-    <script src="./JScript/iniciando.js"></script>
+    <script src="./JScript/start.js"></script>
 
-    <script src="./JScript/navPaginas.js"></script>
+    <script src="./JScript/showOrHiddenButtons.js"></script>
+    
+    <script src="./JScript/navPagesButton.js"></script>
 
-    <script src="./JScript/finalizarLMS.js"></script> 
+    <script src="./JScript/goPage.js"></script>
 
     <script>
-        window.onload = iniciandoCurso();
-    </script> 
--->
+        window.onload = startCourse();
+    </script>
+
+
 
 </body>
 

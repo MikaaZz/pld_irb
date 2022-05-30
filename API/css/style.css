@@ -25,7 +25,10 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #ECE4DB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -142,13 +145,16 @@ p {
 .container_main .iframe_course {
   margin: 0;
   padding: 0;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .container_main .main_button-start {
-  background-color: #ECE4DB;
+  display: block;
+  background-color: #fff;
   color: #25A29A;
   border: none;
+  cursor: pointer;
   margin: 1rem;
   padding: 1.5rem 4rem;
   -webkit-transform: skew(-20deg);
@@ -183,6 +189,7 @@ p {
   background-color: #ECE4DB;
   color: #25A29A;
   border: none;
+  cursor: pointer;
   margin: 1rem;
   padding: 1.5rem 4rem;
   -webkit-transform: skew(-20deg);
@@ -208,6 +215,7 @@ p {
   background-color: #25A29A;
   color: #fff;
   border: none;
+  cursor: pointer;
   margin: 1rem;
   padding: 1.5rem 4rem;
   -webkit-transform: skew(-20deg);
@@ -233,6 +241,7 @@ p {
   background-color: #ECE4DB;
   color: #25A29A;
   border: none;
+  cursor: pointer;
   margin: 1rem;
   padding: 1.5rem 4rem;
   -webkit-transform: skew(-20deg);
