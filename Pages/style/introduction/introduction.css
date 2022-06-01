@@ -1,21 +1,21 @@
 @font-face {
   font-family: "pf_agora_slab_regular";
-  src: url(../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
 }
 
 @font-face {
   font-family: "pf_agora_slab_bold";
-  src: url(../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
 }
 
 @font-face {
   font-family: "effra_regular";
-  src: url(../../Fonts/Effra_Std_Rg.ttf);
+  src: url(../../../Fonts/Effra_Std_Rg.ttf);
 }
 
 @font-face {
   font-family: "effra_ligth";
-  src: url(../../Fonts/Effra_Std_Lt.ttf);
+  src: url(../../../Fonts/Effra_Std_Lt.ttf);
 }
 
 * {
@@ -56,44 +56,6 @@ h6 {
 p {
   font-size: 2rem;
   font-family: "effra_regular";
-}
-
-.header_introduction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.header_introduction .container_header--title {
-  background-image: url(../../assets/introduction/pld_irb_capa.gif);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5rem 0;
-}
-
-.header_introduction .container_header--title .content_header--title {
-  background-color: #005A69;
-  -webkit-clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
-          clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
-  width: 25%;
-}
-
-.header_introduction .container_header--title .content_header--title h1 {
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.header_introduction .container_header--bar {
-  background-color: #25A29A;
-  margin: 0;
-  padding: 3rem 0;
-  width: 100%;
 }
 
 .main_introduction {

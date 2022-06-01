@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "pf_agora_slab_regular";
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+}
+
+@font-face {
+  font-family: "pf_agora_slab_bold";
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+}
+
+@font-face {
+  font-family: "effra_regular";
+  src: url(../../../Fonts/Effra_Std_Rg.ttf);
+}
+
+@font-face {
+  font-family: "effra_ligth";
+  src: url(../../../Fonts/Effra_Std_Lt.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ECE4DB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 8.2rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+p,
+strong,
+b {
+  font-size: 2rem;
+  font-family: "effra_regular";
+}
+
+.container_header--stepTree {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_header--stepTree .container_textBlock {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #25A29A;
+  margin: 2rem;
+  padding: 2rem;
+  width: 40%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
+.container_header--stepTree .container_textBlock .content_textBlock {
+  color: #fff;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_header--stepTree .container_headerInformation {
+  background-image: url(../../assets/step03/imagem_bg_stepTree.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.container_header--stepTree .container_headerInformation .content_headerInformation--text {
+  color: #fff;
+  margin: auto;
+  padding: 10%;
+  text-align: center;
+  width: 70%;
+}
+
+.container_main--stepTree {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-top: 1rem solid #25A29A;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container_main--stepTree .content_main--text {
+  margin: 2%;
+}
+
+.container_main--stepTree .container_cardsInformation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_main--stepTree .container_cardsInformation .container_cardsInformation--card,
+.container_main--stepTree .container_cardsInformation .container_cardsInformation--cardNoHover {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #005A69;
+  margin: 1%;
+  padding: 3%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  height: 200px;
+  width: 300px;
+}
+
+.container_main--stepTree .container_cardsInformation .container_cardsInformation--card .content_cardsInformation--icon,
+.container_main--stepTree .container_cardsInformation .container_cardsInformation--cardNoHover .content_cardsInformation--icon {
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_main--stepTree .container_cardsInformation .container_cardsInformation--card .content_cardsInformation--text,
+.container_main--stepTree .container_cardsInformation .container_cardsInformation--cardNoHover .content_cardsInformation--text {
+  color: #fff;
+  display: none;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_main--stepTree .container_cardsInformation--card:hover {
+  background-color: #25A29A;
+}
+
+.container_main--stepTree .container_cardsInformation--card:hover .content_cardsInformation--icon {
+  display: none;
+}
+
+.container_main--stepTree .container_cardsInformation--card:hover .content_cardsInformation--text {
+  display: block;
+  opacity: 1;
+}
+
+.container_main--stepTree .container_imageInformation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
+}
+
+.container_main--stepTree .container_imageInformation .content_imageInformation--text {
+  margin: 2%;
+  text-align: justify;
+  width: 50%;
+}
+
+.container_main--stepTree .content_separationBar--treeColors {
+  margin: 2%;
+  width: 70%;
+}
+
+.container_main--stepTree .container_footer--stepTree {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2% 0;
+}
+
+.container_main--stepTree .container_footer--stepTree .content_footer--text {
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.container_main--stepTree .container_footer--stepTree .content_footer--button {
+  background-color: #ECE4DB;
+  color: #005A69;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  padding: 1.5rem 4rem;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.container_main--stepTree .container_footer--stepTree .content_footer--button p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "pf_agora_slab_regular";
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_main--stepTree .container_footer--stepTree .content_footer--button:hover {
+  background-color: #25A29A;
+  color: #fff;
+}
+/*# sourceMappingURL=step03.css.map */

@@ -11,10 +11,10 @@
 
 body {
     background-color: $color_cream;
-    
+
     box-sizing: border-box;
     overflow-x: hidden;
-    
+
 }
 
 h1 {
@@ -128,6 +128,45 @@ p {
 
         }
     }
+
+    .header_introduction {
+
+        display: flex;
+        flex-direction: column;
+
+        .container_header--title {
+            background-image: url(../../assets/introduction/pld_irb_capa.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            padding: 5rem 0;
+
+            .content_header--title {
+                background-color: $color_blueDark;
+
+                clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
+
+                width: 25%;
+
+                h1 {
+                    color: $color_white;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+
+        .container_header--bar {
+            background-color: $color_blueClear;
+
+            margin: 0;
+            padding: 3rem 0;
+
+            width: 100%;
+        }
+    }
 }
 
 .container_main {
@@ -141,25 +180,27 @@ p {
 
     .main_button-start {
         display: block;
-        
+
         @include nav_button ($color_white, $color_blueClear, $color_blueClear, $color_white);
     }
 }
 
 .container_footer {
-    
+
+    background-color: $color_blueDark;
+
     display: flex;
     justify-content: center;
 
     .main_button-previous {
-        @include nav_button ($color_cream, $color_blueClear, $color_blueDark, $color_white);
+        @include nav_button ($color_cream, $color_blueClear, $color_white, $color_blueDark);
     }
 
     .main_button-next {
-        @include nav_button ($color_blueClear, $color_white, $color_blueDark, $color_white);
+        @include nav_button ($color_blueClear, $color_white, $color_cream, $color_blueDark);
     }
 
     .main_button-finish {
-        @include nav_button ($color_cream, $color_blueClear, $color_blueDark, $color_white);
+        @include nav_button ($color_cream, $color_blueClear, $color_white, $color_blueDark);
     }
 }
