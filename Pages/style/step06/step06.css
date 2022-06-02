@@ -97,6 +97,7 @@ i {
 
 .container_header--stepSix .container_textBlock .content_textBlock {
   color: #fff;
+  text-align: center;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
 }
@@ -119,5 +120,371 @@ i {
   border-top: 1rem solid #25A29A;
   margin: 0 auto;
   width: 80%;
+}
+
+.container_main--stepSix .content_main--text {
+  margin: 2%;
+  text-align: center;
+}
+
+.container_main--stepSix .container_listInfomation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_main--stepSix .container_listInfomation .content_listInfomation--text {
+  margin: 2%;
+  text-align: center;
+}
+
+.container_main--stepSix .container_listInfomation .container_listInformation--itens {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_main--stepSix .container_listInfomation .container_listInformation--itens .container_listInformation--item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2%;
+}
+
+.container_main--stepSix .container_listInfomation .container_listInformation--itens .container_listInformation--item .content_listInformation--image {
+  margin: 2%;
+}
+
+.container_main--stepSix .container_listInfomation .container_listInformation--itens .container_listInformation--item .content_listInformation--text {
+  margin: 2%;
+  text-align: left;
+}
+
+.container_main--stepSix .content_separationBar--treeColors {
+  margin: 2%;
+  width: 70%;
+}
+
+.container_main--stepSix .container_cards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_main--stepSix .container_cards .content_cards--text {
+  margin: 2%;
+  text-align: center;
+}
+
+.container_main--stepSix .container_cards .container_flashCards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #25A29A;
+  color: #fff;
+  padding: 2%;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  width: 50%;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card {
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardImage {
+  margin: 2% auto;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  height: 215px;
+  width: 320px;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardText {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #005A69;
+  color: #fff;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  margin: 2% auto;
+  padding: 0 5%;
+  height: 0;
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardText p {
+  display: block;
+  text-align: center;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card:hover .content_flashCard--cardImage {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card:hover .content_flashCard--cardText {
+  position: unset;
+  visibility: visible;
+  opacity: 1;
+  height: 215px;
+  width: 320px;
+}
+
+.container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .content_flashCard--text {
+  margin: 2%;
+  text-align: center;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .container_header--stepSix .container_textBlock {
+    width: 60%;
+  }
+  .container_main--stepSix {
+    width: 90%;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard {
+    width: 80%;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card {
+    padding: 2%;
+    width: 80%;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardImage {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardText {
+    position: unset;
+    visibility: visible;
+    opacity: 1;
+    height: 215px;
+    width: 250px;
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardText p {
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card:hover .content_flashCard--cardImage {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card:hover .content_flashCard--cardText {
+    position: unset;
+    visibility: visible;
+    opacity: 1;
+    height: 215px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container_main--stepSix {
+    width: 95%;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card {
+    margin: 0;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardText {
+    height: 215px;
+    width: 220px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container_header--stepSix .container_textBlock {
+    width: 70%;
+  }
+  .container_main--stepSix {
+    width: 95%;
+  }
+  .container_main--stepSix .container_listInfomation .container_listInformation--itens {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container_main--stepSix .container_listInfomation .container_listInformation--itens .container_listInformation--item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_main--stepSix .container_listInfomation .container_listInformation--itens .container_listInformation--item .content_listInformation--text {
+    text-align: center;
+  }
+  .container_main--stepSix .container_cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_main--stepSix .container_cards .content_cards--text {
+    margin: 2%;
+    text-align: center;
+  }
+  .container_main--stepSix .container_cards .container_flashCards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #25A29A;
+    color: #fff;
+    padding: 2%;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardImage {
+    display: none;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .container_flashCard--card .content_flashCard--cardText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_main--stepSix .container_cards .container_flashCards .container_flashCards--twoCards .container_flashCard .content_flashCard--text {
+    margin: 2%;
+    text-align: center;
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=step06.css.map */
