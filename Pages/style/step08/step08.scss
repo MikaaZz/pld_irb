@@ -1,0 +1,97 @@
+@import '../../../Scss/var';
+@import '../../../Scss/mixin';
+@import '../../../Scss/fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color_cream;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 8.2rem;
+    @include pfRegular();
+}
+
+h2 {
+    font-size: 3.2rem;
+    @include pfRegular();
+}
+
+h3 {
+    font-size: 2.8rem;
+    @include pfRegular();
+}
+
+h4,
+h5,
+h6 {
+    font-size: 2.4rem;
+    @include pfRegular();
+}
+
+p,
+strong,
+b,
+i,
+a,
+ul,
+li {
+    font-size: 2rem;
+    @include effraRegular();
+}
+
+.hidden {
+    display: none;
+}
+
+.container_header--stepEight {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container_textBlock {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        background-color: $color_blueClear;
+
+        margin: 2rem;
+        padding: 2rem;
+
+        width: 40%;
+
+        transform: skew(-20deg);
+
+        .content_textBlock {
+            color: $color_white;
+            text-align: center;
+            transform: skew(20deg);
+        }
+    }
+}
+
+.container_main--stepEigth {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: $color_white;
+    border-top: 1rem solid $color_blueClear;
+
+    margin: 0 auto;
+
+    width: 80%;
+
+}

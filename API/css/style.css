@@ -142,7 +142,7 @@ p {
   border: solid 0.1rem #fff;
 }
 
-.container_header .header_introduction {
+.header_introduction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +152,7 @@ p {
           flex-direction: column;
 }
 
-.container_header .header_introduction .container_header--title {
+.header_introduction .container_header--title {
   background-image: url(../../assets/introduction/pld_irb_capa.gif);
   background-position: center;
   background-repeat: no-repeat;
@@ -160,20 +160,20 @@ p {
   padding: 5rem 0;
 }
 
-.container_header .header_introduction .container_header--title .content_header--title {
+.header_introduction .container_header--title .content_header--title {
   background-color: #005A69;
   -webkit-clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
           clip-path: polygon(100% 0, 85% 100%, 0 100%, 0% 0%);
   width: 25%;
 }
 
-.container_header .header_introduction .container_header--title .content_header--title h1 {
+.header_introduction .container_header--title .content_header--title h1 {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 
-.container_header .header_introduction .container_header--bar {
+.header_introduction .container_header--bar {
   background-color: #25A29A;
   margin: 0;
   padding: 3rem 0;
