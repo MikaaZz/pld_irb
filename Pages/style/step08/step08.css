@@ -109,7 +109,7 @@ li {
           transform: skew(20deg);
 }
 
-.container_main--stepEigth {
+.container_main--stepEight {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -127,5 +127,95 @@ li {
   border-top: 1rem solid #25A29A;
   margin: 0 auto;
   width: 80%;
+}
+
+.container_main--stepEight .content_separationBar--treeColors {
+  margin: 2%;
+  width: 70%;
+}
+
+.container_main--stepEight .container_mainMap {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5%;
+}
+
+.container_main--stepEight .container_mainMap .container_mainMap--div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_main--stepEight .container_mainMap .container_mainMap--div .content_mainMap--text {
+  margin: 2%;
+}
+
+.container_main--stepEight .container_mainMap .container_mainMap--div .text_two {
+  margin: 5% 0 5% 5%;
+}
+
+.container_main--stepEight .container_mainMap .container_mainMap--div .container_mainMap--list .content_mainMap--item {
+  margin: 2%;
+}
+
+.container_main--stepEight .container_mainMap .container_mainMap--div .container_mainMap--list .content_mainMap--item a {
+  color: #005A69;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container_main--stepEight .content_main--subtitle {
+  color: #005A69;
+  margin: 2%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container_main--stepEight {
+    width: 90%;
+  }
+  .container_main--stepEight .container_mainMap--image {
+    margin: auto;
+    width: 50%;
+  }
+  .container_main--stepEight .container_mainMap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_main--stepEight .container_mainMap .container_mainMap--div .text_two {
+    margin: 2%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container_main--stepEight {
+    width: 95%;
+  }
+  .container_main--stepEight .container_mainMap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_main--stepEight .container_mainMap .container_mainMap--div {
+    margin: 2%;
+  }
 }
 /*# sourceMappingURL=step08.css.map */

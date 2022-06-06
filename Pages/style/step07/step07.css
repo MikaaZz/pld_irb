@@ -1,21 +1,21 @@
 @font-face {
   font-family: "pf_agora_slab_regular";
-  src: url(../../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+  src: url(../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
 }
 
 @font-face {
   font-family: "pf_agora_slab_bold";
-  src: url(../../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+  src: url(../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
 }
 
 @font-face {
   font-family: "effra_regular";
-  src: url(../../../Fonts/Effra_Std_Rg.ttf);
+  src: url(../../Fonts/Effra_Std_Rg.ttf);
 }
 
 @font-face {
   font-family: "effra_ligth";
-  src: url(../../../Fonts/Effra_Std_Lt.ttf);
+  src: url(../../Fonts/Effra_Std_Lt.ttf);
 }
 
 * {
@@ -592,6 +592,9 @@ li {
 }
 
 @media (max-width: 425px) {
+  .container_main--stepSeven {
+    width: 95%;
+  }
   .container_main--stepSeven .container_buttonsLaw .container_buttonsLaw--button .content_buttonsLaw--button {
     border: 1.2rem solid #005A69;
     -webkit-box-shadow: 0 0 0 0.4rem #005A69;
