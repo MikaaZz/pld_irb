@@ -1,4 +1,4 @@
-function goToStartPage() {
+function goToStartPage() { 
     currentPage = 0;
     goPage(currentPage);
 }

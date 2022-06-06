@@ -1,4 +1,4 @@
-let pageCounter = new Array(13);
+let pageCounter = new Array(12);
 
 pageCounter[0] = "../Pages/introduction.html";
 pageCounter[1] = "../Pages/step01.html";
@@ -11,8 +11,7 @@ pageCounter[7] = "../Pages/step07.html";
 pageCounter[8] = "../Pages/step08.html";
 pageCounter[9] = "../Pages/step09.html";
 pageCounter[10] = "../Pages/step10.html";
-pageCounter[11] = "../Pages/step11.html";
-pageCounter[12] = "../Pages/step12.html";
+pageCounter[11] = "../Pages/finish.html";
 
 let currentPage = null;
 

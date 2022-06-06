@@ -34,46 +34,46 @@
 
                     <nav class="container_nav--buttons">
 
-                        <button class="opened_nav--button">Introdução</button>
+                        <button class="opened_nav--button" onclick="goPage(0)">Introdução</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">O que é Lavagem de Dinheiro?</button>
+                        <button class="opened_nav--button" onclick="goPage(1)">O que é Lavagem de Dinheiro?</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Entendendo o que é Financiamento ao Terrorismo</button>
+                        <button class="opened_nav--button" onclick="goPage(2)">Entendendo o que é Financiamento ao Terrorismo</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Como se diferencia a lavagem de dinheiro do Financiamento ao
+                        <button class="opened_nav--button" onclick="goPage(3)">Como se diferencia a lavagem de dinheiro do Financiamento ao
                             terrorismo?</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Mas como você pode contribuir para previnir este crime em
+                        <button class="opened_nav--button" onclick="goPage(4)">Mas como você pode contribuir para previnir este crime em
                             nossa
                             Companhia</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Processo de Lavagem de Dinheiro</button>
+                        <button class="opened_nav--button" onclick="goPage(5)">Processo de Lavagem de Dinheiro</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Técnicas mais comuns</button>
+                        <button class="opened_nav--button" onclick="goPage(6)">Técnicas mais comuns</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Conhecendo a legislação que trata sobre o tema no
+                        <button class="opened_nav--button" onclick="goPage(7)">Conhecendo a legislação que trata sobre o tema no
                             Brasil</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Conhecendo a legislação que trata sobre o tema na
+                        <button class="opened_nav--button" onclick="goPage(8)">Conhecendo a legislação que trata sobre o tema na
                             Argentina</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Principais Métodos e Mecanismos de Prevenção</button>
+                        <button class="opened_nav--button" onclick="goPage(9)">Principais Métodos e Mecanismos de Prevenção</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Como identificar algumas situações atípicas ou
+                        <button class="opened_nav--button" onclick="goPage(10)">Como identificar algumas situações atípicas ou
                             suspeitas?</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button">Fechamento</button>
+                        <button class="opened_nav--button" onclick="goPage(11)">Fechamento</button>
 
                     </nav>
 
@@ -107,13 +107,13 @@
     </main>
 
     <nav class="container_footer">
-        <button class="main_button-previous " onclick="goToLastPage()">
+        <button class="main_button-previous hidden" onclick="goToLastPage()">
             <p>Voltar para a tela inicial</p>
         </button>
-        <button class="main_button-next " onclick="goToNextPage()">
+        <button class="main_button-next hidden" onclick="goToNextPage()">
             <p>Próxima etapa</p>
         </button>
-        <button class="main_button-finish ">
+        <button class="main_button-finish hidden">
             <p>Finalizar curso</p>
         </button>
     </nav>
@@ -127,6 +127,8 @@
     <script src="./JScript/navPagesButton.js"></script>
 
     <script src="./JScript/goPage.js"></script>
+
+    <script src="./JScript/menu.js"></script>
 
     <script>
         window.onload = startCourse();

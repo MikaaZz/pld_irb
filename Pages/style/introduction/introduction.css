@@ -1,21 +1,21 @@
 @font-face {
   font-family: "pf_agora_slab_regular";
-  src: url(../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
 }
 
 @font-face {
   font-family: "pf_agora_slab_bold";
-  src: url(../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
 }
 
 @font-face {
   font-family: "effra_regular";
-  src: url(../../Fonts/Effra_Std_Rg.ttf);
+  src: url(../../../Fonts/Effra_Std_Rg.ttf);
 }
 
 @font-face {
   font-family: "effra_ligth";
-  src: url(../../Fonts/Effra_Std_Lt.ttf);
+  src: url(../../../Fonts/Effra_Std_Lt.ttf);
 }
 
 * {

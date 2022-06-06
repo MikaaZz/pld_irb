@@ -22,6 +22,7 @@
   padding: 0;
   margin: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -153,7 +154,7 @@ p {
 }
 
 .header_introduction .container_header--title {
-  background-image: url(../../assets/introduction/pld_irb_capa.gif);
+  background-image: url(../assets/pld_irb_capa.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
