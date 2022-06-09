@@ -14,7 +14,7 @@
     transition: all 250ms ease-in-out;
 
     p {
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: bold;
         @include pfRegular();
 
@@ -24,5 +24,14 @@
     &:hover {
         background-color: $buttonColorHover;
         color: $textButtonColorHover;
+    }
+    @media (max-width:425px) {
+        font-size: 1.8rem;
+        padding: 1rem 2.5rem;
+        transform: skew(0deg);
+
+        p {
+            transform: skew(0deg);
+        }
     }
 }

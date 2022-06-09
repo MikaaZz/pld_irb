@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,54 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <script src="./JScript/API.js"></script>
+
+    <script>
+
+        function setIframeHeight(id, navWidth) {
+
+            if (document.getElementById) {
+
+                var theIframe = document.getElementById(id);
+
+                if (theIframe) {
+
+                    var height = getWindowHeight();
+
+                    theIframe.style.height = Math.round(height) - navWidth + "px";
+
+                }
+            }
+        }
+
+        function getWindowHeight() {
+            var height = 0;
+
+            if (window.innerHeight) {
+                height = window.innerHeight - 18;
+
+            } else if (document.documentElement && document.documentElement.clientHeight) {
+                height = document.documentElement.clientHeight;
+                
+            } else if (document.body && document.body.clientHeight) {
+                height = document.body.clientHeight;
+            }
+            return height;
+        }
+
+        function SetupIFrame() {
+            //set our iFrame for the content to take up the full screen except for our navigation
+            var navWidth = 40;
+            setIframeHeight("iframe_course", navWidth);
+            //need this in a setTimeout to avoid a timing error in IE6
+            window.setTimeout('window.onresize = function() { setIframeHeight("iframe_course", ' + navWidth + '); }',
+                1000);
+        }
+
+
+    </script>
+
 </head>
 
 <body>
@@ -26,7 +73,7 @@
                     menu
                 </span>
 
-                <div class="container_nav--opened">
+                <div class="container_nav--opened close">
 
                     <span class="opened_nav--icon material-symbols-outlined">
                         close
@@ -40,14 +87,17 @@
                         <button class="opened_nav--button" onclick="goPage(1)">O que é Lavagem de Dinheiro?</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button" onclick="goPage(2)">Entendendo o que é Financiamento ao Terrorismo</button>
+                        <button class="opened_nav--button" onclick="goPage(2)">Entendendo o que é Financiamento ao
+                            Terrorismo</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button" onclick="goPage(3)">Como se diferencia a lavagem de dinheiro do Financiamento ao
+                        <button class="opened_nav--button" onclick="goPage(3)">Como se diferencia a lavagem de dinheiro
+                            do Financiamento ao
                             terrorismo?</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button" onclick="goPage(4)">Mas como você pode contribuir para previnir este crime em
+                        <button class="opened_nav--button" onclick="goPage(4)">Mas como você pode contribuir para
+                            previnir este crime em
                             nossa
                             Companhia</button>
                         <hr class="opened_nav--line">
@@ -58,18 +108,22 @@
                         <button class="opened_nav--button" onclick="goPage(6)">Técnicas mais comuns</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button" onclick="goPage(7)">Conhecendo a legislação que trata sobre o tema no
+                        <button class="opened_nav--button" onclick="goPage(7)">Conhecendo a legislação que trata sobre o
+                            tema no
                             Brasil</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button" onclick="goPage(8)">Conhecendo a legislação que trata sobre o tema na
+                        <button class="opened_nav--button" onclick="goPage(8)">Conhecendo a legislação que trata sobre o
+                            tema na
                             Argentina</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button" onclick="goPage(9)">Principais Métodos e Mecanismos de Prevenção</button>
+                        <button class="opened_nav--button" onclick="goPage(9)">Principais Métodos e Mecanismos de
+                            Prevenção</button>
                         <hr class="opened_nav--line">
 
-                        <button class="opened_nav--button" onclick="goPage(10)">Como identificar algumas situações atípicas ou
+                        <button class="opened_nav--button" onclick="goPage(10)">Como identificar algumas situações
+                            atípicas ou
                             suspeitas?</button>
                         <hr class="opened_nav--line">
 
@@ -86,7 +140,7 @@
         <section class="header_introduction">
 
             <div class="container_header--title">
-                
+
                 <div class="content_header--title">
                     <h1>Pld</h1>
                 </div>
@@ -100,25 +154,30 @@
     </header>
 
     <main class="container_main">
+
         <iframe id="iframe_course" class="iframe_course" src="" frameborder="0"></iframe>
+
         <button class="main_button-start" onclick="goToNextPage()">
             <p>Iniciar</p>
         </button>
+
     </main>
 
     <nav class="container_footer">
-        <button class="main_button-previous hidden" onclick="goToLastPage()">
+
+        <button class="main_button-previous" onclick="goToLastPage()">
             <p>Voltar para a tela inicial</p>
         </button>
-        <button class="main_button-next hidden" onclick="goToNextPage()">
+
+        <button class="main_button-next" onclick="goToNextPage()">
             <p>Próxima etapa</p>
         </button>
+
         <button class="main_button-finish hidden">
             <p>Finalizar curso</p>
         </button>
-    </nav>
 
-    <script src="./JScript/buttons.js"></script>
+    </nav>
 
     <script src="./JScript/start.js"></script>
 
@@ -126,14 +185,18 @@
 
     <script src="./JScript/navPagesButton.js"></script>
 
+    <script src="./JScript/finishButton.js"></script>
+
     <script src="./JScript/goPage.js"></script>
 
     <script src="./JScript/menu.js"></script>
 
+
+
     <script>
         window.onload = startCourse();
+        window.onload = SetupIFrame();
     </script>
-
 
 
 </body>

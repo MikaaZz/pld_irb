@@ -49,6 +49,16 @@ li {
     @include effraRegular();
 }
 
+@keyframes showItem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .hidden {
     display: none;
 }
@@ -109,6 +119,8 @@ li {
         flex-direction: column;
         justify-content: center;
 
+        width: 100%;
+
         .container_buttonsLaw--button {
             align-items: center;
             display: flex;
@@ -137,6 +149,8 @@ li {
             flex-direction: column;
             justify-content: center;
 
+            width: 70%;
+
             .container_buttonsLaw--text {
                 background-color: $color_blueClear;
                 color: $color_white;
@@ -146,7 +160,10 @@ li {
 
                 transform: skew(-20deg);
 
-                width: 70%;
+                width: 100%;
+
+                animation-name: showItem;
+                animation-duration: .25s;
 
                 .content_buttonsLaw--subtitle {
                     text-align: center;

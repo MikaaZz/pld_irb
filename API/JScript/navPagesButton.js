@@ -6,7 +6,7 @@ function goToStartPage() {
 function goToLastPage() {
     if (currentPage > 0) {  
         currentPage--;
-        goPage(currentPage);
+        goPage(0);
     }
 }
 

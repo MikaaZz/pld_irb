@@ -30,3 +30,7 @@
 @mixin effraLight {
     font-family: "effra_ligth";
 }
+
+* {
+    transition: all .25s ease-in-out;
+}

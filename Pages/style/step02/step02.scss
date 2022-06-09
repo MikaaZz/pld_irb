@@ -43,6 +43,16 @@ p {
     @include effraRegular();
 }
 
+@keyframes showItem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .container_main--stepTwo {
     align-items: center;
     display: flex;
@@ -126,6 +136,7 @@ p {
 
                         list-style: none;
 
+                        cursor: pointer;
 
                         padding: 1rem 2.5rem;
 
@@ -144,6 +155,9 @@ p {
 
             .content_interactionButtonsAndText--text {
                 text-align: justify;
+
+                animation-name: showItem;
+                animation-duration: .25s;
             }
         }
     }
@@ -203,6 +217,90 @@ p {
 
         .content_footer--button {
             @include nav_button ($color_cream, $color_blueDark, $color_blueClear, $color_white);
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container_main--stepTwo {
+        width: 90%;
+
+        .container_interaction {
+
+            .container_interaction--buttonsAndImage {
+                align-items: flex-start;
+                flex-direction: column;
+
+                .container_interaction--buttonsAndText {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container_main--stepTwo {
+        width: 95%;
+
+        .container_video {
+
+            .content_video--block {
+                height: 200px;
+                width: 350px;
+
+                margin: auto;
+            }
+        }
+
+        .container_blockInformation {
+            flex-direction: column;
+
+            .content_blockInformation--image {
+                width: 80%;
+            }
+
+            .container_blockInformation--text {
+                width: 80%;
+            }
+        }
+
+        .content_footer--text {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .container_main--stepTwo {
+
+        .container_interaction {
+
+            .container_interaction--buttonsAndImage {
+                align-items: flex-start;
+                flex-direction: column;
+
+                .container_interaction--buttonsAndText {
+                    align-items: center;
+
+                    .container_interaction--buttons {
+
+                        .content_interaction--button {
+                            font-size: 3rem;
+                            padding: .8rem 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container_video {
+
+            .content_video--block {
+                height: 150px;
+                width: 300px;
+            }
         }
     }
 }

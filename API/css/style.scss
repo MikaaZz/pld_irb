@@ -50,14 +50,20 @@ p {
     display: none;
 }
 
+.open {
+    display: flex;
+}
+
+.close {
+    display: none;
+}
+
 .container_header {
     align-items: center;
     display: flex;
     justify-content: space-between;
 
     background-color: $color_white;
-
-    position: sticky;
 
     .content_header--image {
         margin: 2rem;
@@ -67,6 +73,11 @@ p {
         align-items: flex-end;
         display: flex;
         flex-direction: column;
+
+        position: absolute;
+        right: 0;
+        top: 12px;
+        z-index: 1;
 
         .close_nav--icon {
             color: $color_blueDark;
@@ -82,7 +93,6 @@ p {
             background-color: $color_blueDark;
 
             align-items: flex-end;
-            display: none;
             flex-direction: column;
 
             padding: 2rem;
@@ -120,6 +130,8 @@ p {
                     margin: 1rem;
 
                     text-align: left;
+
+                    cursor: pointer;
                 }
 
                 .opened_nav--line {
@@ -132,8 +144,6 @@ p {
 
         }
     }
-
-
 }
 
 .header_introduction {
@@ -185,7 +195,9 @@ p {
     }
 
     .main_button-start {
-        display: block;
+        top: 50%;
+        position: absolute;
+        right: 45%;
 
         @include nav_button ($color_white, $color_blueClear, $color_blueClear, $color_white);
     }
@@ -208,5 +220,88 @@ p {
 
     .main_button-finish {
         @include nav_button ($color_cream, $color_blueClear, $color_white, $color_blueDark);
+    }
+}
+
+@media (max-width:1024px) {
+
+    .container_main {
+
+        .main_button-start {
+            top: 57%;
+            right: 35%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+      
+    .container_main {
+
+        .main_button-start {
+            top: 60%;
+            right: 30%;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    
+    .container_header {
+
+        .container_header--nav {
+
+            .container_nav--opened {
+
+                width: 80%;
+            }
+        }
+    }
+
+    .header_introduction {
+
+        .container_header--title {
+
+            .content_header--title {
+                width: 45%;
+            }
+        }
+    }
+    
+    .container_main {
+
+        .main_button-start {
+            top: 70%;
+            right: 30%;
+        }
+    }
+
+    .container_footer {
+
+        background-color: $color_blueDark;
+    
+        display: flex;
+        justify-content: center;
+    
+    }
+}
+
+@media (max-width:320px) {
+
+    .header_introduction {
+
+        .container_header--title {
+
+            .content_header--title {
+                width: 55%;
+            }
+        }
+    }
+    .container_main {
+
+        .main_button-start {
+            top: 75%;
+            right: 25%;
+        }
     }
 }

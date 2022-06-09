@@ -19,6 +19,11 @@
 }
 
 * {
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+* {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
@@ -322,9 +327,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  .header_introduction .container_header--title .content_header--title {
-    width: 40%;
-  }
   .main_stepOne .container_main--whiteBG .container_whiteBG--textInBlock {
     padding: 1.5%;
   }

@@ -46,6 +46,19 @@ i {
     @include effraRegular();
 }
 
+@keyframes showItem {
+    0%   { opacity: 0;}                                                                 
+    100% { opacity: 1;}
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.content_interaction--buttonClick {
+    background-color: $color_blueClear;
+}
+
 .container_header--stepFive {
     align-items: center;
     display: flex;
@@ -133,10 +146,6 @@ i {
                 margin: 2% 5%;
                 text-align: center;
                 width: 25%;
-            }
-
-            .hidden {
-                opacity: 0;
             }
         }
 

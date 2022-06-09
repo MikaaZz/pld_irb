@@ -204,6 +204,10 @@ i {
                                 display: block;
                                 text-align: center;
                                 transform: skew(20deg);
+
+                                position: absolute;
+                                visibility: hidden;
+                                opacity: 0;
                             }
                         }
 
@@ -222,6 +226,12 @@ i {
 
                                 height: 215px;
                                 width: 320px;
+
+                                p {
+                                    position: unset;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -403,7 +413,7 @@ i {
                         .container_flashCard--card {
 
                             .content_flashCard--cardImage {
-                               display: none;
+                                display: none;
                             }
 
                             .content_flashCard--cardText {

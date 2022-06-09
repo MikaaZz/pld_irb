@@ -65,3 +65,14 @@ p {
         }
     }
 }
+
+@media (max-width:425px) {
+    .main_introduction {
+        align-items: center;
+        flex-direction: column;
+
+        .content_main--text {
+            text-align: center;
+        }
+    }
+}

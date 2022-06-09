@@ -196,11 +196,86 @@ b {
         .content_footer--text {
             margin-bottom: 2%;
             text-align: center;
-            
+
         }
 
         .content_footer--button {
             @include nav_button ($color_cream, $color_blueDark, $color_blueClear, $color_white);
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container_header--stepTree {
+        .container_textBlock {
+            width: 80%;
+        }
+    }
+
+    .container_main--stepTree {
+        width: 90%;
+
+        .container_cardsInformation {
+
+            .container_cardsInformation--card,
+            .container_cardsInformation--cardNoHover {
+                height: 180px;
+                width: 250px;
+            }
+
+            .container_cardsInformation--card {
+                .content_cardsInformation--icon {
+                    display: none;
+                }
+        
+                .content_cardsInformation--text {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .container_header--stepTree {
+
+        .container_textBlock {
+            text-align: center;
+        }
+    }
+
+    .container_main--stepTree {
+        width: 95%;
+
+        .content_main--text {
+            text-align: center;
+        }
+        .container_cardsInformation {
+            flex-direction: column;
+
+            .container_cardsInformation--card,
+            .container_cardsInformation--cardNoHover {
+                height: 180px;
+                width: 280px;
+                transform: skew(-10deg);
+
+                .content_cardsInformation--icon {
+                    transform: skew(10deg);
+                }
+
+                .content_cardsInformation--text {
+                    transform: skew(10deg);
+                }
+            }
+        }
+
+        .container_imageInformation {
+            flex-direction: column-reverse;
+
+            .content_imageInformation--text {             
+                width: 80%;
+                
+            }
         }
     }
 }

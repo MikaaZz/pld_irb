@@ -19,6 +19,11 @@
 }
 
 * {
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+* {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
@@ -260,7 +265,7 @@ b {
 }
 
 .container_main--stepTree .container_footer--stepTree .content_footer--button p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: "pf_agora_slab_regular";
   -webkit-transform: skew(20deg);
@@ -270,5 +275,83 @@ b {
 .container_main--stepTree .container_footer--stepTree .content_footer--button:hover {
   background-color: #25A29A;
   color: #fff;
+}
+
+@media (max-width: 425px) {
+  .container_main--stepTree .container_footer--stepTree .content_footer--button {
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .container_main--stepTree .container_footer--stepTree .content_footer--button p {
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container_header--stepTree .container_textBlock {
+    width: 80%;
+  }
+  .container_main--stepTree {
+    width: 90%;
+  }
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--card,
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--cardNoHover {
+    height: 180px;
+    width: 250px;
+  }
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--card .content_cardsInformation--icon {
+    display: none;
+  }
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--card .content_cardsInformation--text {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container_header--stepTree .container_textBlock {
+    text-align: center;
+  }
+  .container_main--stepTree {
+    width: 95%;
+  }
+  .container_main--stepTree .content_main--text {
+    text-align: center;
+  }
+  .container_main--stepTree .container_cardsInformation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--card,
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--cardNoHover {
+    height: 180px;
+    width: 280px;
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
+  }
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--card .content_cardsInformation--icon,
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--cardNoHover .content_cardsInformation--icon {
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+  }
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--card .content_cardsInformation--text,
+  .container_main--stepTree .container_cardsInformation .container_cardsInformation--cardNoHover .content_cardsInformation--text {
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+  }
+  .container_main--stepTree .container_imageInformation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container_main--stepTree .container_imageInformation .content_imageInformation--text {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=step03.css.map */

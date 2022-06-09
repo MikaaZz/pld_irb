@@ -49,6 +49,16 @@ li {
     @include effraRegular();
 }
 
+@keyframes showItem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .hidden {
     display: none;
 }
@@ -119,7 +129,7 @@ li {
         justify-content: center;
         margin: 2%;
 
-        
+
 
         .content_ilustrationAndText--text {
             width: 50%;
@@ -190,6 +200,9 @@ li {
             text-align: center;
 
             width: 70%;
+
+            animation-name: showItem;
+            animation-duration: .25s;
         }
     }
 
@@ -518,7 +531,7 @@ li {
 
                         .content_informationBlockTree-text {
                             text-align: center;
-                            width: 90%;                        
+                            width: 90%;
                         }
                     }
                 }

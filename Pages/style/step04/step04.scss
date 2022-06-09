@@ -46,6 +46,19 @@ i {
     @include effraRegular();
 }
 
+@keyframes showItem {
+    0%   { opacity: 0;}                                                                 
+    100% { opacity: 1;}
+}
+
+.hidden {
+    display: none;
+}
+
+.content_interaction--buttonClick {
+    background-color: $color_blueClear;
+}
+
 .container_header--stepFour {
     align-items: center;
     display: flex;
@@ -127,13 +140,15 @@ i {
 
                     height: 120px;
                     width: 120px;
+
+                    cursor: pointer;
                 }
 
                 .content_infomationButton--text {
-                    display: none;
-                    opacity: 0;
                     text-align: center;
-                    width: 70%;
+                    
+                    animation-name: showItem;
+                    animation-duration: .25s;
                 }
             }
 
@@ -221,7 +236,7 @@ i {
 
                     width: 75%;
 
-                    .content_video--text{
+                    .content_video--text {
                         width: 100%;
                     }
                 }
@@ -260,7 +275,7 @@ i {
 
                     width: 50%;
 
-                    .content_video--text{
+                    .content_video--text {
                         width: 100%;
                     }
                 }
