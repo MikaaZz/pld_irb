@@ -1,0 +1,285 @@
+@import '../../../Scss/var';
+@import '../../../Scss/mixin';
+@import '../../../Scss/fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color_cream;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 8.2rem;
+    @include pfRegular();
+}
+
+h2 {
+    font-size: 3.2rem;
+    @include pfRegular();
+}
+
+h3 {
+    font-size: 2.8rem;
+    @include pfRegular();
+}
+
+h4,
+h5,
+h6 {
+    font-size: 2.4rem;
+    @include pfRegular();
+}
+
+p,
+strong,
+b,
+i {
+    font-size: 2rem;
+    @include effraRegular();
+}
+
+@keyframes showItem {
+    0%   { opacity: 0;}                                                                 
+    100% { opacity: 1;}
+}
+
+.hidden {
+    display: none;
+}
+
+.content_interaction--buttonClick {
+    background-color: $color_blueClear;
+}
+
+.container_header--stepFour {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container_textBlock {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        background-color: $color_blueClear;
+
+        margin: 2rem;
+        padding: 2rem;
+
+        width: 40%;
+
+        transform: skew(-20deg);
+
+        .content_textBlock {
+            color: $color_white;
+
+            transform: skew(20deg);
+        }
+    }
+}
+
+.container_main--stepFour {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: $color_white;
+    border-top: 1rem solid $color_blueClear;
+
+    margin: 0 auto;
+
+    width: 80%;
+
+    .content_main--textInstruction {
+        margin-top: 2%;
+    }
+
+    .container_informationButtons {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 2%;
+
+
+        .container_informationButtons--display {
+            align-items: flex-start;
+            display: grid;
+            gap: 150px;
+            grid-template-columns: repeat(3, auto);
+
+            margin: 5%;
+
+            .container_informationButton {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                grid-column: span 1;
+                transition: all .25s ease-in-out;
+
+                .content_infomationButton--icon {
+                    background-color: $color_blueDark;
+                    border-radius: 50%;
+
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+
+                    height: 120px;
+                    width: 120px;
+
+                    cursor: pointer;
+                }
+
+                .content_infomationButton--text {
+                    text-align: center;
+                    
+                    animation-name: showItem;
+                    animation-duration: .25s;
+                }
+            }
+
+
+        }
+
+        .two_columns {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+
+    .content_separationBar--treeColors {
+        margin: 2%;
+        width: 70%;
+    }
+
+    .container_videoInformation {
+
+        .content_videoInformation--text {
+            margin: 2%;
+            text-align: center;
+        }
+
+        .container_video {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            margin: 2%;
+
+            .content_video--iframe {
+                height: 350px;
+                width: 560px;
+            }
+
+            .container_video--text {
+                background-color: $color_yellow;
+                color: $color_white;
+                clip-path: polygon(100% 0, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+                padding: 2%;
+
+                width: 80%;
+
+                .content_video--text {
+                    font-size: 1.6rem;
+                    width: 80%;
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+@media (max-width:768px) {
+    .container_header--stepFour {
+        .container_textBlock {
+            width: 70%;
+        }
+    }
+
+    .container_main--stepFour {
+        width: 90%;
+
+        .container_informationButtons {
+            .container_informationButtons--display {
+                gap: 20px;
+            }
+        }
+
+        .container_videoInformation {
+            .container_video {
+                flex-direction: column;
+
+                .content_video--iframe {
+                    height: 300px;
+                }
+
+                .container_video--text {
+                    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+
+                    text-align: center;
+
+                    width: 75%;
+
+                    .content_video--text {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .container_main--stepFour {
+        width: 95%;
+
+        .container_informationButtons {
+            .container_informationButtons--display {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+        }
+
+        .container_videoInformation {
+            .container_video {
+                flex-direction: column;
+
+                .content_video--iframe {
+                    height: 120px;
+                    width: 300px;
+                }
+
+                .container_video--text {
+                    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+
+                    text-align: center;
+
+                    width: 50%;
+
+                    .content_video--text {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "pf_agora_slab_regular";
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+}
+
+@font-face {
+  font-family: "pf_agora_slab_bold";
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+}
+
+@font-face {
+  font-family: "effra_regular";
+  src: url(../../../Fonts/Effra_Std_Rg.ttf);
+}
+
+@font-face {
+  font-family: "effra_ligth";
+  src: url(../../../Fonts/Effra_Std_Lt.ttf);
+}
+
+* {
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ECE4DB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 8.2rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-family: "pf_agora_slab_regular";
+  color: #25A29A;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+p,
+strong,
+b,
+i,
+a,
+ul,
+li {
+  font-size: 2rem;
+  font-family: "effra_regular";
+}
+
+.hidden {
+  display: none;
+}
+
+.container_header--stepTen {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_header--stepTen .container_textBlock {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #25A29A;
+  margin: 2rem;
+  padding: 2rem;
+  width: 40%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
+.container_header--stepTen .container_textBlock .content_textBlock {
+  color: #fff;
+  text-align: center;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_main--stepTen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-top: 1rem solid #25A29A;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container_main--stepTen .content_main--text {
+  margin: 2% auto;
+}
+
+.container_main--stepTen .content_main--subtitle {
+  color: #005A69;
+  margin: 2% auto;
+  text-align: center;
+  width: 90%;
+}
+
+.container_main--stepTen .container_flashCards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_main--stepTen .container_flashCards .container_flashCards--card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #25A29A;
+  color: #fff;
+  margin: 2%;
+  padding: 2%;
+  height: 300px;
+  width: 300px;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.container_main--stepTen .container_flashCards .container_flashCards--card .container_flashCards--image {
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.container_main--stepTen .container_flashCards .container_flashCards--card .content_flashCards--text {
+  text-align: center;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  height: 0;
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.container_main--stepTen .container_flashCards .container_flashCards--card:hover {
+  background-color: #005A69;
+}
+
+.container_main--stepTen .container_flashCards .container_flashCards--card:hover .container_flashCards--image {
+  height: 0;
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container_main--stepTen .container_flashCards .container_flashCards--card:hover .content_flashCards--text {
+  position: unset;
+  visibility: visible;
+  opacity: 1;
+  height: unset;
+  width: unset;
+}
+
+.container_main--stepTen .content_separationBar--treeColors {
+  margin: 2% auto;
+  width: 70%;
+}
+
+.container_main--stepTen .container_informationBlock {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.container_main--stepTen .container_informationBlock .contanier_informationBlock--div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2%;
+}
+
+.container_main--stepTen .container_informationBlock .contanier_informationBlock--div .content_informaitonBlock--icon {
+  background-color: #005A69;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 16rem;
+  width: 16rem;
+}
+
+.container_main--stepTen .container_informationBlock .contanier_informationBlock--div .content_informationBlock--text {
+  margin: 2%;
+  text-align: center;
+  width: 80%;
+}
+
+@media (max-width: 1024px) {
+  .container_header--stepTen .container_textBlock {
+    width: 80%;
+  }
+  .container_main--stepTen .container_flashCards .container_flashCards--card {
+    height: 290px;
+    width: 290px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_main--stepTen {
+    width: 80%;
+  }
+  .container_main--stepTen .container_flashCards .container_flashCards--card {
+    padding: 4%;
+    height: 220px;
+    width: 220px;
+    background-color: #005A69;
+  }
+  .container_main--stepTen .container_flashCards .container_flashCards--card .container_flashCards--image {
+    height: 0;
+    width: 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .container_main--stepTen .container_flashCards .container_flashCards--card .content_flashCards--text {
+    position: unset;
+    visibility: visible;
+    opacity: 1;
+    height: unset;
+    width: unset;
+  }
+  .container_main--stepTen .container_informationBlock {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .container_main--stepTen {
+    width: 95%;
+  }
+  .container_main--stepTen .container_flashCards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_main--stepTen .container_flashCards .container_flashCards--card {
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .container_main--stepTen .container_flashCards .container_flashCards--card .container_flashCards--image {
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .container_main--stepTen .container_flashCards .container_flashCards--card .content_flashCards--text {
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+}
+
+@media (max-width: 375px) {
+  .container_main--stepTen {
+    width: 95%;
+  }
+  .container_main--stepTen .container_informationBlock {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+/*# sourceMappingURL=step10.css.map */

@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "pf_agora_slab_regular";
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Regular.ttf);
+}
+
+@font-face {
+  font-family: "pf_agora_slab_bold";
+  src: url(../../../Fonts/PF_Agora_Slab_Pro_Bold.ttf);
+}
+
+@font-face {
+  font-family: "effra_regular";
+  src: url(../../../Fonts/Effra_Std_Rg.ttf);
+}
+
+@font-face {
+  font-family: "effra_ligth";
+  src: url(../../../Fonts/Effra_Std_Lt.ttf);
+}
+
+* {
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ECE4DB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 8.2rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-family: "pf_agora_slab_regular";
+  color: #25A29A;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+  font-family: "pf_agora_slab_regular";
+}
+
+p,
+strong,
+b,
+i {
+  font-size: 2rem;
+  font-family: "effra_regular";
+}
+
+@-webkit-keyframes showItem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showItem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.content_interaction--buttonClick {
+  background-color: #25A29A;
+}
+
+.container_header--stepFive {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_header--stepFive .container_textBlock {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #25A29A;
+  margin: 2rem;
+  padding: 2rem;
+  width: 40%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
+.container_header--stepFive .container_textBlock .content_textBlock {
+  color: #fff;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.container_main--stepFive {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-top: 1rem solid #25A29A;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container_main--stepFive .container_buttonsInteraction .content_buttonsInteraction--mainText {
+  margin: 2% auto;
+  text-align: center;
+}
+
+.container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--buttons {
+  background-image: url(../../assets/step05/money_image_stepFive.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2% 4%;
+  padding: 10% 5%;
+}
+
+.container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--buttons .content_buttonsInteraction--button {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2rem solid #005A69;
+  -webkit-box-shadow: 0 0 0 0.8rem #005A69;
+          box-shadow: 0 0 0 0.8rem #005A69;
+  outline: 0.3rem solid #fff;
+  cursor: pointer;
+  padding: 2rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--text .content_buttonsInteraction--text {
+  margin: 2% 5%;
+  text-align: center;
+  width: 25%;
+}
+
+.container_main--stepFive .content_separationBar--treeColors {
+  margin: 2%;
+  width: 70%;
+}
+
+.container_main--stepFive .container_videoInformation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_main--stepFive .container_videoInformation .content_videoInformation--text {
+  margin: 2%;
+  text-align: center;
+}
+
+.container_main--stepFive .container_videoInformation .content_video--iframe {
+  height: 350px;
+  width: 560px;
+}
+
+.container_main--stepFive .container_audioInformation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
+  width: 80%;
+}
+
+.container_main--stepFive .container_audioInformation .content_audioInfomation--image {
+  margin: 2%;
+}
+
+.container_main--stepFive .container_audioInformation .container_audioInfomartion--button {
+  margin: 2%;
+}
+
+.container_main--stepFive .container_audioInformation .container_audioInfomartion--button .content_audioInfomation--button {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container_main--stepFive {
+    width: 90%;
+  }
+  .container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--buttons .content_buttonsInteraction--button {
+    height: 6rem;
+    width: 6rem;
+  }
+  .container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--text .content_buttonsInteraction--text {
+    font-size: 1.6rem;
+  }
+  .container_main--stepFive .container_audioInformation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container_main--stepFive {
+    width: 95%;
+  }
+  .container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--buttons .content_buttonsInteraction--button {
+    border: 1rem solid #005A69;
+    -webkit-box-shadow: 0 0 0 0.4rem #005A69;
+            box-shadow: 0 0 0 0.4rem #005A69;
+    outline: 0.15rem solid #fff;
+    padding: 1rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--text .content_buttonsInteraction--text {
+    font-size: 1.6rem;
+  }
+  .container_main--stepFive .container_videoInformation .content_video--iframe {
+    margin: 2%;
+    height: 180px;
+    width: 350px;
+  }
+  .container_main--stepFive .container_audioInformation .content_audioInfomation--image {
+    margin: 2%;
+    width: 300px;
+  }
+  .container_main--stepFive .container_audioInformation .container_audioInfomartion--button .content_audioInfomation--button {
+    width: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container_header--stepFive .container_textBlock {
+    width: 60%;
+  }
+  .container_header--stepFive .container_textBlock .content_textBlock {
+    text-align: center;
+  }
+  .container_main--stepFive .container_buttonsInteraction .content_buttonsInteraction--mainText {
+    margin: 2%;
+    text-align: center;
+  }
+  .container_main--stepFive .container_buttonsInteraction .container_buttonsInteraction--buttons .content_buttonsInteraction--button {
+    border: 0.6rem solid #005A69;
+    -webkit-box-shadow: 0 0 0 0.2rem #005A69;
+            box-shadow: 0 0 0 0.2rem #005A69;
+    outline: 0.1rem solid #fff;
+    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .container_main--stepFive .container_videoInformation .content_video--iframe {
+    margin: 2%;
+    height: 150px;
+    width: 300px;
+  }
+  .container_main--stepFive .container_audioInformation .content_audioInfomation--image {
+    margin: 4%;
+    width: 280px;
+  }
+}
+/*# sourceMappingURL=step05.css.map */

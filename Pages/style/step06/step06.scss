@@ -1,0 +1,440 @@
+@import '../../../Scss/var';
+@import '../../../Scss/mixin';
+@import '../../../Scss/fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color_cream;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 8.2rem;
+    @include pfRegular();
+}
+
+h2 {
+    font-size: 3.2rem;
+    @include pfRegular();
+}
+
+h3 {
+    font-size: 2.8rem;
+    @include pfRegular();
+}
+
+h4,
+h5,
+h6 {
+    font-size: 2.4rem;
+    @include pfRegular();
+}
+
+p,
+strong,
+b,
+i {
+    font-size: 2rem;
+    @include effraRegular();
+}
+
+.container_header--stepSix {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container_textBlock {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        background-color: $color_blueClear;
+
+        margin: 2rem;
+        padding: 2rem;
+
+        width: 40%;
+
+        transform: skew(-20deg);
+
+        .content_textBlock {
+            color: $color_white;
+            text-align: center;
+            transform: skew(20deg);
+        }
+    }
+}
+
+.container_main--stepSix {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: $color_white;
+    border-top: 1rem solid $color_blueClear;
+
+    margin: 0 auto;
+
+    width: 80%;
+
+    .content_main--text {
+        margin: 2%;
+        text-align: center;
+    }
+
+    .container_listInfomation {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .content_listInfomation--text {
+            margin: 2%;
+            text-align: center;
+        }
+
+        .container_listInformation--itens {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .container_listInformation--item {
+                align-items: center;
+                display: flex;
+                margin: 2%;
+
+                .content_listInformation--image {
+                    margin: 2%;
+                }
+
+                .content_listInformation--text {
+                    margin: 2%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .content_separationBar--treeColors {
+        margin: 2%;
+        width: 70%;
+    }
+
+    .container_cards {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .content_cards--text {
+            margin: 2%;
+            text-align: center;
+        }
+
+        .container_flashCards {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            .container_flashCards--twoCards {
+                align-items: flex-start;
+                display: flex;
+                flex-direction: row;
+
+                background-color: $color_blueClear;
+                color: $color_white;
+
+                padding: 2%;
+
+                .container_flashCard {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+
+                    width: 50%;
+
+                    .container_flashCard--card {
+
+                        transition: all .25s ease-in-out;
+
+                        .content_flashCard--cardImage {
+                            margin: 2% auto;
+                            transition: opacity .5s ease-in-out;
+
+                            height: 215px;
+                            width: 320px;
+
+                        }
+
+                        .content_flashCard--cardText {
+                            align-items: center;
+                            display: flex;
+                            justify-content: center;
+
+                            background-color: $color_blueDark;
+                            color: $color_white;
+
+                            transform: skew(-20deg);
+
+                            margin: 2% auto;
+                            padding: 0 5%;
+
+                            height: 0;
+                            width: 0;
+
+                            position: absolute;
+                            visibility: hidden;
+                            opacity: 0;
+
+                            transition: opacity .5s ease-in-out;
+
+                            p {
+                                display: block;
+                                text-align: center;
+                                transform: skew(20deg);
+
+                                position: absolute;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                        }
+
+                        &:hover {
+
+                            .content_flashCard--cardImage {
+                                position: absolute;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+
+                            .content_flashCard--cardText {
+                                position: unset;
+                                visibility: visible;
+                                opacity: 1;
+
+                                height: 215px;
+                                width: 320px;
+
+                                p {
+                                    position: unset;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .content_flashCard--text {
+                        margin: 2%;
+
+                        text-align: center;
+
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .container_header--stepSix {
+
+        .container_textBlock {
+            width: 60%;
+        }
+    }
+
+    .container_main--stepSix {
+        width: 90%;
+
+        .container_cards {
+
+            .container_flashCards {
+
+                .container_flashCards--twoCards {
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .container_flashCard {
+                        width: 80%;
+
+                        .container_flashCard--card {
+                            padding: 2%;
+
+                            width: 80%;
+
+                            .content_flashCard--cardImage {
+                                position: absolute;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+
+                            .content_flashCard--cardText {
+                                position: unset;
+                                visibility: visible;
+                                opacity: 1;
+                                height: 215px;
+                                width: 250px;
+
+                                transform: skew(0deg);
+
+                                p {
+                                    transform: skew(0deg);
+                                }
+                            }
+
+                            &:hover {
+
+                                .content_flashCard--cardImage {
+                                    position: absolute;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                }
+
+                                .content_flashCard--cardText {
+                                    position: unset;
+                                    visibility: visible;
+                                    opacity: 1;
+                                    height: 215px;
+                                    width: 250px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .container_main--stepSix {
+        width: 95%;
+
+        .container_cards {
+
+            .container_flashCards {
+
+                .container_flashCards--twoCards {
+
+                    .container_flashCard {
+
+                        .container_flashCard--card {
+                            margin: 0;
+
+                            .content_flashCard--cardText {
+
+                                height: 215px;
+                                width: 220px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .container_header--stepSix {
+
+        .container_textBlock {
+            width: 70%;
+        }
+    }
+
+    .container_main--stepSix {
+        width: 95%;
+
+        .container_listInfomation {
+
+            .container_listInformation--itens {
+                align-items: center;
+
+                .container_listInformation--item {
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .content_listInformation--text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .container_cards {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .content_cards--text {
+                margin: 2%;
+                text-align: center;
+            }
+
+            .container_flashCards {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
+                .container_flashCards--twoCards {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    background-color: $color_blueClear;
+                    color: $color_white;
+
+                    padding: 2%;
+
+                    .container_flashCard {
+
+                        flex-direction: column;
+                        margin: 0;
+
+                        width: 100%;
+
+                        .container_flashCard--card {
+
+                            .content_flashCard--cardImage {
+                                display: none;
+                            }
+
+                            .content_flashCard--cardText {
+                                align-items: center;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                        }
+
+                        .content_flashCard--text {
+                            margin: 2%;
+
+                            text-align: center;
+
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
